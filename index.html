@@ -17,18 +17,14 @@
     <body ng-app="todo"> 
         <div class="container" ng-controller="controller">
             <h1>Lista de procrastinações</h1>
-            <h4>{{name}}</h4>
             <ul>
-                <li><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-remove"></span>Tarefa procrastinada 1</li>
-                <li class="done"><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-remove"></span>Tarefa procrastinada 2</li>
-                <li><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-remove"></span>Tarefa procrastinada 3</li>
-                <li><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-remove"></span>Tarefa procrastinada 4</li>
-                <li><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-remove"></span>Tarefa procrastinada 5</li>
-                <li class="done"><span class="glyphicon glyphicon-ok"></span><span class="glyphicon glyphicon-remove"></span>Tarefa procrastinada 6</li>
+                <li ng-repeat="task in tasks" ng-class="{done : task.done}">
+                    <span class="glyphicon glyphicon-ok" ng-click="change(task)">V</span>
+                    <span class="glyphicon glyphicon-remove" ng-click="remove(task, $index)">X</span>{{task.text}}</li>
             </ul>
 
-            <form action="javascript:void()">
-                <input placeholder="O que mais procrastinar?">
+            <form action="javascript:void(0)" ng-model="task" ng-submit="add()">
+                <input ng-model = "task.text" placeholder="O que mais procrastinar?" required> 
                 <input type="submit" value="Procrastinar!">
             </form>
         </div>

@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 warn package.json todo_webservice@1.0.0 No description
+6 warn package.json todo_webservice@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/home/347733/Área de Trabalho/workshop-meanjs/webservice',
+8 verbose install   [ 'mongose' ] ]
+9 info preinstall todo_webservice@1.0.0
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'mongose@^4.11.7', null ]
+12 verbose cache add name=undefined spec="mongose@^4.11.7" args=["mongose@^4.11.7",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'mongose@^4.11.7',
+13 verbose parsed url   path: 'mongose@^4.11.7',
+13 verbose parsed url   href: 'mongose@^4.11.7' }
+14 verbose cache add name="mongose" spec="^4.11.7" args=["mongose","^4.11.7"]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: '^4.11.7',
+15 verbose parsed url   path: '^4.11.7',
+15 verbose parsed url   href: '^4.11.7' }
+16 verbose addNamed [ 'mongose', '^4.11.7' ]
+17 verbose addNamed [ null, '>=4.11.7-0 <5.0.0-0' ]
+18 silly lockFile 7e1f339b-mongose-4-11-7 mongose@^4.11.7
+19 verbose lock mongose@^4.11.7 /home/347733/.npm/7e1f339b-mongose-4-11-7.lock
+20 silly addNameRange { name: 'mongose', range: '>=4.11.7-0 <5.0.0-0', hasData: false }
+21 verbose request where is /mongose
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id 442123a258cb73c3
+24 verbose url raw /mongose
+25 verbose url resolving [ 'https://registry.npmjs.org/', './mongose' ]
+26 verbose url resolved https://registry.npmjs.org/mongose
+27 verbose request where is https://registry.npmjs.org/mongose
+28 info trying registry request attempt 1 at 15:38:50
+29 verbose etag W/"5982114a-11d6"
+30 http GET https://registry.npmjs.org/mongose
+31 http 304 https://registry.npmjs.org/mongose
+32 silly registry.get cb [ 304,
+32 silly registry.get   { date: 'Wed, 23 Aug 2017 18:38:50 GMT',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     'cache-control': 'max-age=300',
+32 silly registry.get     etag: 'W/"5982114a-11d6"',
+32 silly registry.get     age: '164',
+32 silly registry.get     connection: 'keep-alive',
+32 silly registry.get     'x-served-by': 'cache-gru17126-GRU',
+32 silly registry.get     'x-cache': 'HIT',
+32 silly registry.get     'x-cache-hits': '1',
+32 silly registry.get     'x-timer': 'S1503513531.891092,VS0,VE0',
+32 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+33 verbose etag https://registry.npmjs.org/mongose from cache
+34 silly addNameRange number 2 { name: 'mongose', range: '>=4.11.7-0 <5.0.0-0', hasData: true }
+35 silly addNameRange versions [ 'mongose',
+35 silly addNameRange   [ '0.0.1-security', '1.0.1', '1.0.2', '0.0.2-security' ] ]
+36 silly lockFile 7e1f339b-mongose-4-11-7 mongose@^4.11.7
+37 silly lockFile 7e1f339b-mongose-4-11-7 mongose@^4.11.7
+38 error notarget No compatible version found: mongose@'>=4.11.7-0 <5.0.0-0'
+38 error notarget Valid install targets:
+38 error notarget ["0.0.1-security","1.0.1","1.0.2","0.0.2-security"]
+38 error notarget
+38 error notarget This is most likely not a problem with npm itself.
+38 error notarget In most cases you or one of your dependencies are requesting
+38 error notarget a package version that doesn't exist.
+39 error System Linux 3.13.0-128-generic
+40 error command "/usr/bin/node" "/usr/bin/npm" "install"
+41 error cwd /home/347733/Área de Trabalho/workshop-meanjs/webservice
+42 error node -v v0.10.37
+43 error npm -v 1.4.28
+44 error code ETARGET
+45 verbose exit [ 1, true ]
